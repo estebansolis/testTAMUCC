@@ -1,0 +1,2 @@
+module Home::AppointmentsHelper
+end
