@@ -6,10 +6,12 @@
 #
 default: &default
   adapter: postgresql
+  encoding: SQL_ASCII
+  database: cc_database
   pool: 5
   timeout: 5000
-  username: NHB
-  password:
+  username: ubuntu
+  password: cfleitasdatabase
 
 development:
   <<: *default
