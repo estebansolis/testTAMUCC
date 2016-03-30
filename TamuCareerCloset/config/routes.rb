@@ -2,6 +2,10 @@ Rails.application.routes.draw do
  # get 'home/Appointments'
 
   get '/appointments', :to => "home#appointments#index"
+  get '/available' , :to => "home#available#index"
+  get '/checkedout' , :to => "home#checkedout#index"
+  get '/late' , :to => "home#late#index"
+  get '/signin' , :to => "home#signin#index"
 
   get 'home/index'
 
