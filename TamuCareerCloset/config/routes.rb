@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
  # get 'home/Appointments'
 
-  get 'home/Appointments' :to => redirect('/Appoinments.html')
+  get 'home/appointments', :to => redirect('/appoinments.html.erb')
 
   get 'home/index'
 
