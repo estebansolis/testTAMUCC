@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/checkedout' , :to => "home#checkedout#index"
   get '/late' , :to => "home#late#index"
   get '/signin' , :to => "home#signin#index"
+  get '/home' , :to => "home#index"
 
   get 'home/index'
 
