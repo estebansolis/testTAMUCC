@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get '/appointments', :to => "home#appointments#index"
   get '/available' , :to => "home#available#index"
   get '/checkedout' , :to => "home#checkedout#index"
+  get '/checkin' , :to => "home#checkin#index"
+  get '/checkout' , :to => "home#checkout#index"
   get '/late' , :to => "home#late#index"
   get '/signin' , :to => "home#signin#index"
   get '/home' , :to => "home#index"
