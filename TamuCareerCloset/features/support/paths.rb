@@ -16,6 +16,9 @@ module NavigationHelpers
     when /^the home\s?page$/
       home_path
     
+    when /^the checkin\s?page$/
+      checkin_path
+      
     when /^the appointments\s?page$/
       appointments_path
 

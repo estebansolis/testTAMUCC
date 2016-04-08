@@ -54,25 +54,41 @@
         0,
         0
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/appointments_controller.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/signin_controller.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
+=======
       "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/checkedout_controller.rb": [
+>>>>>>> ef476cfb142f4b59d3bdfa8e291470a4a432927e
+        0,
+        0,
+        0,
+        0
+      ],
+<<<<<<< HEAD
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/signin_controller.rb": [
+=======
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/appointments_controller.rb": [
+>>>>>>> ef476cfb142f4b59d3bdfa8e291470a4a432927e
+        0,
+        0,
+        0,
+        0
+      ],
+<<<<<<< HEAD
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/checkedout_controller.rb": [
+=======
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/signin_controller.rb": [
+>>>>>>> ef476cfb142f4b59d3bdfa8e291470a4a432927e
         0,
         0,
         0,
         0
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1460069341
+=======
+    "timestamp": 1460072935
+>>>>>>> ef476cfb142f4b59d3bdfa8e291470a4a432927e
   }
 }
