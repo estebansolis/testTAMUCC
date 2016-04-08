@@ -14,7 +14,13 @@ module NavigationHelpers
     case page_name
 
     when /^the home\s?page$/
-      '/'
+      home_path
+    
+    when /^the checkin\s?page$/
+      checkin_path
+      
+    when /^the appointments\s?page$/
+      appointments_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

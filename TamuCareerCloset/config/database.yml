@@ -11,7 +11,7 @@ default: &default
   pool: 5
   timeout: 5000
   username: ubuntu
-  password: Fista99ed
+  password: cfleitasdatabase
 
 development:
   <<: *default

@@ -1,0 +1,78 @@
+{
+  "Cucumber Features": {
+    "coverage": {
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/helpers/home/appointments_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/helpers/home/available_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/helpers/home/checkedout_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/helpers/home/late_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/helpers/home/signin_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/late_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/available_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/checkedout_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/appointments_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home/signin_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1460072935
+  }
+}
