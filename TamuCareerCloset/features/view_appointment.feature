@@ -6,7 +6,7 @@ Feature: View all appointments
 
 Background: On Home Page
   
-Scenario: Look at appoinments page
+Scenario: Look at appointments page
   Given I am on the home page
   When  I follow "Appointments"
   Then  I expect to be on the appoinments page

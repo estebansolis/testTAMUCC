@@ -6,7 +6,7 @@ When(/^follow "([^"]*)"$/) do |page_name|
   visit path_to(page_name)
 end
 
-Then(/^I expect to be on the appoinments page$/) do
+Then(/^I expect to be on the appointments page$/) do
    expect(current_path).to eql(appointments_path)
 end
 
