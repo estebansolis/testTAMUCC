@@ -5,7 +5,7 @@ Feature: Search for suit specification/size
   
 Background: suits in database
    Given the following suits exist:
-      #some table with suits 23, 24, 25, 26 and suit 25 is not available
+      #some table with suits Jacket 1, Jacket2, shoe1, shoe2
       
 Scenario: search available suits by size
   Given I am on the availabe page
@@ -13,3 +13,6 @@ Scenario: search available suits by size
   And   I select "Size" to  "2"
   And   I press search
   Then  I expect to be on the available page for "jacket" and "2"
+  And   I expect to see "Jacket1" 
+  And   I expect to see "Jacket2" 
+  But   I expect not to see "shoe1"
