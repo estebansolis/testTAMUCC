@@ -9,7 +9,7 @@ Background: On Home Page
 Scenario: Look at appointments page
   Given I am on the home page
   When  I follow "Appointments"
-  Then  I expect to be on the appoinments page
+  Then  I expect to be on the appointments page
   And   I see the calendar 
   
 Scenario: Go back to home page
