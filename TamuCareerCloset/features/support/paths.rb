@@ -19,6 +19,9 @@ module NavigationHelpers
     when /^the checkin\s?page$/
       checkin_path
       
+    when /^the checkout\s?page$/
+      checkout_path
+      
     when /^the appointments\s?page$/
       appointments_path
 

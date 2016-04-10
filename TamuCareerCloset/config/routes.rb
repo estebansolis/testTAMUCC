@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :students
+  resources :apparels
+  resources :rentals
  # get 'home/Appointments'
 
   get '/manage', :to => "home#manage#index"
