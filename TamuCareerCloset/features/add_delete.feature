@@ -5,7 +5,7 @@ Feature: Add/Delete suit
 
 Background: suits in database
   Given the following suits exist:
-    #some table with suits 23, 24, 25, 26
+    #some table with suits Fj11
       
 Scenario: Add a new suit
   Given I am on the manage page
@@ -15,3 +15,9 @@ Scenario: Add a new suit
   And   I fill out the "Size" with "2"
   And   I press "Add Apparel"
   Then  I expect to see  "Successfully Added Apparel ID: FJ431"
+  
+Scenario: Delete a existing suit
+  Given I am on the manage page
+  When  I select #s
+  And   I press "Delete Apparel"
+  Then I expect to see "Successfully deleted Apparel ID: FJ11"
