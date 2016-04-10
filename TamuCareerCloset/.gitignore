@@ -18,3 +18,6 @@
 
 # Ignore the Database
 /config/database.yml
+
+# Ignore the Coverage Files
+/coverage
