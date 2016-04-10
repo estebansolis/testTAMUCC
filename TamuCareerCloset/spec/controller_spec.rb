@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Home::AppointmentsController, type: :controller do
+describe AppointmentsController, type: :controller do
     describe 'Appointment Tests', :pending => true do
         it 'Pending testing' do
             skip
