@@ -10,6 +10,11 @@ class ApparelsController < ApplicationController
   # GET /apparels/1
   # GET /apparels/1.json
   def show
+    @apparels = Apparel.all
+  end
+
+  def available
+    @apparels = Apparel.all
   end
 
   # GET /apparels/new

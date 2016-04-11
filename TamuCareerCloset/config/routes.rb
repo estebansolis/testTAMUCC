@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/manage', :to => "home#manage#index"
   get '/appointments', :to => "home#appointments#index"
   get '/available/:id', :to => "home#available#index"
-  get '/available' , :to => "home#available#index"
+  get '/available' , :to => "apparels#index"
   get '/checkedout' , :to => "home#checkedout#index"
   get '/checkin' , :to => "home#checkin#index"
   get '/checkout' , :to => "home#checkout#index"
