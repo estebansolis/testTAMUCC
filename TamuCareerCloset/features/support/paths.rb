@@ -24,6 +24,9 @@ module NavigationHelpers
       
     when /^the appointments\s?page$/
       appointments_path
+    
+    when /^the available\s?page$/
+      available_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
