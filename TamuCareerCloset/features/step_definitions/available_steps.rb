@@ -1,13 +1,15 @@
 Given(/^the following suits exist:$/) do |table|
   # table is a Cucumber::Core::Ast::DataTable
+  table.hashes.each do |article|
+    Apparel.create(:Apparel_ID => article['Apparel_ID'], :Sex => article['Sex'], :Article => article['Article'], :Size => article['Size'], :Status => article['Status']);
+  end 
+end
+
+Given(/^on the available page$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Given(/^I am on the availabe page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-When(/^I select "([^"]*)" to "([^"]*)"$/) do |arg1, arg2|
+When(/^select "([^"]*)" to "([^"]*)"$/) do |arg1, arg2|
   pending # Write code here that turns the phrase above into concrete actions
 end
 

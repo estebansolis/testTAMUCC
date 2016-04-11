@@ -1,6 +1,11 @@
 {
   "Cucumber Features": {
     "coverage": {
+      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/models/apparel.rb": [
+        1,
+        null,
+        null
+      ],
       "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/controllers/home_controller.rb": [
         1,
         1,
@@ -316,16 +321,12 @@
         0,
         0
       ],
-      "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/models/apparel.rb": [
-        0,
-        0
-      ],
       "/home/ubuntu/workspace/TamuCareerCloset/TamuCareerCloset/app/models/student.rb": [
         0,
         0
       ]
     },
-    "timestamp": 1460412439
+    "timestamp": 1460414648
   },
   "RSpec": {
     "coverage": {

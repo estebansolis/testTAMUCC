@@ -17,7 +17,7 @@ Background: suits in database
     |   MJ7       |  M  |   Jacket     |  48L  |  out   |     
 
 Scenario: search available suits by size
-  Given I am on the availabe page
+  Given I am on the available page
   When  I select "Sex" to "Male"
   And   I select "Article Type" to "Jacket"
   And   I select "Size" to  "48L"
@@ -28,7 +28,7 @@ Scenario: search available suits by size
   But   I expect not to see "MJ7"
   
 Scenario: search available suits by sex
-  Given I am on the availabe page
+  Given I am on the available page
   When  I select "Sex" to "Female"
   And   I press search
   Then  I expect to be on the available page for "F"
@@ -38,7 +38,7 @@ Scenario: search available suits by sex
   But   I expect not to see "FJ6"
   
 Scenario: search available suits by article
-  Given I am on the availabe page
+  Given I am on the available page
   When  I select "Sex" to "Male"
   And   I select "Article Type" to "Jacket"
   And   I select "Size" to  "48L"
