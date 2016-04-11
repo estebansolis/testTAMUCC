@@ -5,8 +5,9 @@ class CreateApparels < ActiveRecord::Migration
       t.string :Sex
       t.string :Article
       t.string :Size
+      t.string :Status
 
-      t.timestamps null: false
+      # t.timestamps null: false
     end
   end
 end

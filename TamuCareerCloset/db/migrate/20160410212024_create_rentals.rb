@@ -8,7 +8,7 @@ class CreateRentals < ActiveRecord::Migration
       t.datetime :Expected_Return_Date
       t.datetime :Return_Date
 
-      t.timestamps null: false
+      # t.timestamps null: false
     end
   end
 end
