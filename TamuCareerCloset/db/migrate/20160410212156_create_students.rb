@@ -7,7 +7,7 @@ class CreateStudents < ActiveRecord::Migration
       t.string :Email
       t.string :Phone_Number
 
-      t.timestamps null: false
+      # t.timestamps null: false
     end
   end
 end
