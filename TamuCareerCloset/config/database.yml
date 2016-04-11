@@ -6,12 +6,12 @@
 #
 default: &default
   adapter: postgresql
-  encoding: UTF8
+  encoding: SQL_ASCII
   database: cc_database
   pool: 5
   timeout: 5000
-  username: NHB
-  password:
+  username: ubuntu
+  password: Fista99ed
 
 development:
   <<: *default
