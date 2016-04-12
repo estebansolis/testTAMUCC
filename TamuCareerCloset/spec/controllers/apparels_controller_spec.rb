@@ -24,11 +24,23 @@ RSpec.describe ApparelsController, type: :controller do
   # Apparel. As you add validations to Apparel, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {
+      Apparel_ID: "1",
+      Sex: "Male",
+      Article: "Jacket",
+      Size: "32",
+      Status: "In"
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {
+      Apparel_ID: nil,
+      Sex: nil,
+      Article: nil,
+      Size: nil,
+      Status: nil
+    }
   }
 
   # This should return the minimal set of values that should be in the session
@@ -103,14 +115,20 @@ RSpec.describe ApparelsController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        {
+          Apparel_ID: "2",
+          Sex: "Female",
+          Article: "Pants",
+          Size: "28",
+          Status: "In"
+        }
       }
 
       it "updates the requested apparel" do
         apparel = Apparel.create! valid_attributes
         put :update, {:id => apparel.to_param, :apparel => new_attributes}, valid_session
         apparel.reload
-        skip("Add assertions for updated state")
+        expect(assigns(:apparel)).to eq(apparel)
       end
 
       it "assigns the requested apparel as @apparel" do

@@ -6,7 +6,8 @@ RSpec.describe "apparels/show", type: :view do
       :Apparel_ID => "Apparel",
       :Sex => "Sex",
       :Article => "Article",
-      :Size => "Size"
+      :Size => "Size",
+      :Status => "Status"
     ))
   end
 
@@ -16,5 +17,6 @@ RSpec.describe "apparels/show", type: :view do
     expect(rendered).to match(/Sex/)
     expect(rendered).to match(/Article/)
     expect(rendered).to match(/Size/)
+    expect(rendered).to match(/Status/)
   end
 end

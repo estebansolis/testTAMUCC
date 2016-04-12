@@ -7,13 +7,15 @@ RSpec.describe "apparels/index", type: :view do
         :Apparel_ID => "Apparel",
         :Sex => "Sex",
         :Article => "Article",
-        :Size => "Size"
+        :Size => "Size",
+        :Status => "Status"
       ),
       Apparel.create!(
         :Apparel_ID => "Apparel",
         :Sex => "Sex",
         :Article => "Article",
-        :Size => "Size"
+        :Size => "Size",
+        :Status => "Status"
       )
     ])
   end
@@ -24,5 +26,6 @@ RSpec.describe "apparels/index", type: :view do
     assert_select "tr>td", :text => "Sex".to_s, :count => 2
     assert_select "tr>td", :text => "Article".to_s, :count => 2
     assert_select "tr>td", :text => "Size".to_s, :count => 2
+    assert_select "tr>td", :text => "Status".to_s, :count => 2
   end
 end

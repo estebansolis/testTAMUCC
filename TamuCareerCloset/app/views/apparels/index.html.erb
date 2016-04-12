@@ -94,6 +94,7 @@
             <th>Sex</th>
             <th>Article</th>
             <th>Size</th>
+            <th>Status</th>
             <th colspan="10"></th>
           </tr>
         </thead>
@@ -105,6 +106,7 @@
               <td><%= apparel.Sex %></td>
               <td><%= apparel.Article %></td>
               <td><%= apparel.Size %></td>
+              <td><%= apparel.Status %></td>
               <td><%= link_to 'Show', apparel %></td>
               <td><%= link_to 'Edit', edit_apparel_path(apparel) %></td>
               <td><%= link_to 'Destroy', apparel, method: :delete, data: { confirm: 'Are you sure?' } %></td>

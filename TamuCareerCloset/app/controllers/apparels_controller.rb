@@ -74,6 +74,6 @@ class ApparelsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def apparel_params
-      params.require(:apparel).permit(:Apparel_ID, :Sex, :Article, :Size)
+      params.require(:apparel).permit(:Apparel_ID, :Sex, :Article, :Size, :Status)
     end
 end
