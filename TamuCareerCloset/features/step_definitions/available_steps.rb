@@ -18,16 +18,16 @@ When(/^I press search$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Then(/^I expect to be on the available page for "([^"]*)", "([^"]*)", and "([^"]*)"$/) do |arg1, arg2, arg3|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^expect to be on the available page for "([^"]*)", "([^"]*)", and "([^"]*)"$/) do |arg1, arg2, arg3|
+   expect(current_path).to eql(available_path)
 end
 
 Then(/^I expect to see "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+    expect(page).to have_content(arg1)
 end
 
 Then(/^I expect not to see "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+    expect(page).to have_no_content(arg1)
 end
 
 Then(/^I expect to be on the available page for "([^"]*)"$/) do |arg1|

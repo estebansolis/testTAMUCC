@@ -28,6 +28,7 @@ module NavigationHelpers
     when /^the available\s?page$/
       available_path
 
+    
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
