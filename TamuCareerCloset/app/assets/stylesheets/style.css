@@ -38,7 +38,7 @@ body a:hover{
 }
 /*--baner--*/
 .banner {
-   background:url(TamuCareerCloset/app/assets/images/a.jpg)no-repeat 0px 0px;
+   background:url(app/assets/images/a.jpg)no-repeat 0px 0px;
    -webkit-background-size:cover;
     background-size:cover;
 	-moz-background-size:cover;
@@ -546,7 +546,7 @@ p {
 /*-- //services --*/
 /*--slid--*/
 .slid {
-  background: url(TamuCareerCloset/app/assets/images/a.jpg) no-repeat 0px 0px;
+  background: url(/app/assets/images/a.jpg) no-repeat 0px 0px;
   background-size: cover;
   text-align: center;
 }
