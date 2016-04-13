@@ -6,7 +6,7 @@
 #
 default: &default
   adapter: postgresql
-  encoding: UTF8
+  encoding: SQL_ASCII
   database: cc_database
   pool: 5
   timeout: 5000

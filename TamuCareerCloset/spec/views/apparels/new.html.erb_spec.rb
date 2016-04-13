@@ -6,7 +6,8 @@ RSpec.describe "apparels/new", type: :view do
       :Apparel_ID => "MyString",
       :Sex => "MyString",
       :Article => "MyString",
-      :Size => "MyString"
+      :Size => "MyString",
+      :Status => "MyString"
     ))
   end
 
@@ -22,6 +23,8 @@ RSpec.describe "apparels/new", type: :view do
       assert_select "input#apparel_Article[name=?]", "apparel[Article]"
 
       assert_select "input#apparel_Size[name=?]", "apparel[Size]"
+      
+      assert_select "input#apparel_Status[name=?]", "apparel[Status]"
     end
   end
 end
