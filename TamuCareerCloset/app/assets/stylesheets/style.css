@@ -1,11 +1,7 @@
 /*--
 
 --*/
-body{
-	margin:0;
-	font-family: 'OpenSans-Regular';
-	background: #fff;
-}
+
 @font-face {
     font-family: 'OpenSans-Regular';
     src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
@@ -14,6 +10,13 @@ body{
     font-family: 'Abel-Regular';
     src: url(../fonts/Abel-Regular.ttf) format('truetype');
 }
+
+body{
+	margin:0;
+	font-family: 'Open Sans';
+	background: #fff;
+}
+
 body a{
 	transition: 0.5s all ease;
 	-webkit-transition: 0.5s all ease;
@@ -38,7 +41,7 @@ body a:hover{
 }
 /*--baner--*/
 .banner {
-   background:url(app/assets/images/a.jpg)no-repeat 0px 0px;
+   background:url(/assets/a.jpg)no-repeat 0px 0px;
    -webkit-background-size:cover;
     background-size:cover;
 	-moz-background-size:cover;
@@ -327,7 +330,7 @@ ul.nav.navbar-right {
     text-decoration: none;
     height: 53px;
     width: 32px;
-    background: url("TamuCareerCloset/app/assets/images/icons.png") no-repeat 0px 0px;
+    background: url(/assets/icons.png) no-repeat 0px 0px;
 }
 .callbacks_nav.next {
     left: auto;
@@ -546,7 +549,7 @@ p {
 /*-- //services --*/
 /*--slid--*/
 .slid {
-  background: url(/app/assets/images/a.jpg) no-repeat 0px 0px;
+  background: url(/assets/a.jpg) no-repeat 0px 0px;
   background-size: cover;
   text-align: center;
 }
@@ -670,7 +673,7 @@ p {
 }
 .footer-bottom a:before {
     content: '';
-    background:url(TamuCareerCloset/app/assets/images/icons.png)no-repeat 3px 1px;
+    background:url(/assets/icons.png)no-repeat 3px 1px;
 	width: 20px;
     height: 20px;
     display: block;
@@ -780,7 +783,7 @@ p {
 /*-- testimonials --*/
 .testimonials {
     padding: 6em 0 8em;
-    background: url(TamuCareerCloset/app/assets/images/slid.jpg) no-repeat 0px 0px fixed;
+    background: url(/assets/slid.jpg) no-repeat 0px 0px fixed;
     background-size: cover;
 }
 .flexslider {
@@ -827,17 +830,17 @@ p {
 	border-radius: 60%;
 }
 .ch-img-1 {
-    background: url(TamuCareerCloset/app/assets/images/t1.jpg) center top;
+    background: url(/assets/t1.jpg) center top;
 }
 .ch-img-2 { 
-	background:url(TamuCareerCloset/app/assets/images/t2.jpg) center top;
+	background:url(/assets/t2.jpg) center top;
 }
 .ch-img-3 { 
-	background:url(TamuCareerCloset/app/assets/images/t3.jpg) -9px 0px;
+	background:url(/assets/t3.jpg) -9px 0px;
 	background-size: cover;
 }
 .ch-img-4 { 
-	background:url(TamuCareerCloset/app/assets/images/t4.jpg) -45px -15px;
+	background:url(/assets/t4.jpg) -45px -15px;
 }
 .ch-info {
 	position: absolute;
