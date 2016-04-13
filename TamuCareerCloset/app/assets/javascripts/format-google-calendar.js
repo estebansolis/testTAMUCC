@@ -277,7 +277,7 @@ var formatGoogleCalendar = (function() {
     return {
         init: function (settingsOverride) {
             var settings = {
-                calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/esteban.solis93@gmail.com/events?key=AIzaSyBX0a6d8Xby-zZCrBAwSpQOh4xFeMYuCd4',
+                calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/CareerCloset.tamu@gmail.com/events?key=AIzaSyDPJIJU06igdXSW2tWusoiUznjk7oJjQ-0',
                 past: true,
                 upcoming: true,
                 sameDayTimes: true,
