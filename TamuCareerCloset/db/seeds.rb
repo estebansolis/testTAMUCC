@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-apparels = Apparel.create(Apparel_ID: '1', Sex: 'Male', Article: 'Jacket', Size: '32')
+apparels = Apparel.create(Apparel_ID: '12', Sex: 'Female', Article: 'Jacket', Size: '12', Status: 'OUT')
 
 students  = Student.create(UIN: '922004958', First_Name: 'Rafael', Last_Name: 'Salas', Email: 'rafsalas@tamu.edu', Phone_Number: '2478247242')
 

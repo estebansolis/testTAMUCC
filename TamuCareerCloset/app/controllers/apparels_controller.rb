@@ -5,6 +5,7 @@ class ApparelsController < ApplicationController
   # GET /apparels.json
   def index
     @apparels = Apparel.all
+    @apparel_grid = initialize_grid(Apparel)
   end
 
   # GET /apparels/1

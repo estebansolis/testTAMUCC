@@ -79,7 +79,19 @@
     <div class="container">
       <h3 class="title">Our Available Suits</h3>
       <div class="about-info">
-        
+        <%= grid(@apparel_grid) do |apparel|
+        apparel.column name:  'Apparel ID', attribute: 'Apparel_ID'
+        apparel.column name:  'Sex', attribute: 'Sex'
+        apparel.column  name:  'Article', attribute: 'Article'
+        apparel.column name:  'Size', attribute: 'Size'
+        apparel.column  name:  'Status', attribute: 'Status'
+        apparel.column   do |apparel|
+          link_to('Edit', edit_apparel_path(apparel))
+        end
+        apparel.column   do |apparel|
+          link_to('Destroy', apparel, method: :delete, data: { confirm: 'Are you sure? Destroy will be logged!' })
+        end
+        end -%>
       </div>
     </div>
   </div>
@@ -87,36 +99,8 @@
   <!-- testimonials -->
   <div class="testimonials">
     <div class="container">
-      <table>
-        <thead>
-          <tr>
-            <th>Apparel id</th>
-            <th>Sex</th>
-            <th>Article</th>
-            <th>Size</th>
-            <th colspan="10"></th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <% @apparels.each do |apparel| %>
-            <tr>
-              <td><%= apparel.Apparel_ID %></td>
-              <td><%= apparel.Sex %></td>
-              <td><%= apparel.Article %></td>
-              <td><%= apparel.Size %></td>
-              <td><%= link_to 'Show', apparel %></td>
-              <td><%= link_to 'Edit', edit_apparel_path(apparel) %></td>
-              <td><%= link_to 'Destroy', apparel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-
-      <br>
-
-      <%= link_to 'New Apparel', new_apparel_path %>
-    </div>
+      <div class="container">
+      </div>
   </div>
   <!-- //testimonials -->
   <!--team-->
@@ -143,3 +127,4 @@
     <script src="TamuCareerCloset/app/assets/javascripts/bootstrap.js"></script>
 </body>
 </html>
+

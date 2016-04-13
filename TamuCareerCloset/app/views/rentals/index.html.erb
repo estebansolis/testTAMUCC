@@ -1,36 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Rentals</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Rental id</th>
-      <th>Uin</th>
-      <th>Apparel id</th>
-      <th>Checkout date</th>
-      <th>Expected return date</th>
-      <th>Return date</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @rentals.each do |rental| %>
-      <tr>
-        <td><%= rental.Rental_ID %></td>
-        <td><%= rental.UIN %></td>
-        <td><%= rental.Apparel_ID %></td>
-        <td><%= rental.Checkout_Date %></td>
-        <td><%= rental.Expected_Return_Date %></td>
-        <td><%= rental.Return_Date %></td>
-        <td><%= link_to 'Show', rental %></td>
-        <td><%= link_to 'Edit', edit_rental_path(rental) %></td>
-        <td><%= link_to 'Destroy', rental, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="about">
+    <div class="container">
+      <h3 class="title">Our Available Suits</h3>
+      <div class="about-info">
+      </div>
+    </div>
+  </div>
 
 <br>
 
