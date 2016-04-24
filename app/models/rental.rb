@@ -4,5 +4,5 @@ class Rental < ActiveRecord::Base
     validates :Apparel_ID, presence: true
     validates :Checkout_Date, presence: true
     validates :Expected_Return_Date, presence: true
-    validates :Return_Date, presence: true
+    validates :Return_Date, presence: false
 end
