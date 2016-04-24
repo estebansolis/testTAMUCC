@@ -52,24 +52,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
+                    <% @apparels.each do |apparel| %>
+      <tr>
+        <td><%= apparel.Apparel_ID %></td>
+        <td><%= apparel.Sex %></td>
+        <td><%= apparel.Article %></td>
+        <td><%= apparel.Size %></td>
+        <td><%= apparel.Status %></td>
+        <td><%= link_to 'Edit', edit_apparel_path(apparel) %></td>
+        <td><%= link_to 'Destroy', apparel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
                 </tbody>
             </table>
         </div>
