@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  devise_for :views
   resources :rentals
   resources :students
   resources :apparels
