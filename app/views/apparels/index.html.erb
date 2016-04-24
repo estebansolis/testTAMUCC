@@ -1,39 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<div class="input-group"> <span class="input-group-addon">Filter</span>
-
-    <input id="filter" type="text" class="form-control" placeholder="Type here...">
-</div>
-
-<table class="table table-hover">
-  <thead class="thead-inverse">
-    <tr>
-      <th>Apparel ID</th>
-      <th>Sex</th>
-      <th>Article</th>
-      <th>Size</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-     <% @apparels.each do |apparel| %>
-      <tr>
-        <td><%= apparel.Apparel_ID %></td>
-        <td><%= apparel.Sex %></td>
-        <td><%= apparel.Article %></td>
-        <td><%= apparel.Size %></td>
-        <td><%= apparel.Status %></td>
-        <td><%= link_to 'Edit', edit_apparel_path(apparel) %></td>
-        <td><%= link_to 'Destroy', apparel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <div class="container">
-    <h3>The columns titles are merged with the filters inputs thanks to the placeholders attributes</h3>
-    <hr>
-    <p>Inspired by this <a href="http://bootsnipp.com/snippets/featured/panel-tables-with-filter">snippet</a></p>
     <div class="row">
         <div class="panel panel-primary filterable">
             <div class="panel-heading">
@@ -45,24 +13,25 @@
             <table class="table">
                 <thead>
                     <tr class="filters">
-                        <th><input type="text" class="form-control" placeholder="#" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="First Name" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="Last Name" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="Username" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="ID" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Sex" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Article" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Size" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Status" disabled></th>
                     </tr>
                 </thead>
                 <tbody>
                     <% @apparels.each do |apparel| %>
-      <tr>
-        <td><%= apparel.Apparel_ID %></td>
-        <td><%= apparel.Sex %></td>
-        <td><%= apparel.Article %></td>
-        <td><%= apparel.Size %></td>
-        <td><%= apparel.Status %></td>
-        <td><%= link_to 'Edit', edit_apparel_path(apparel) %></td>
-        <td><%= link_to 'Destroy', apparel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+                      <tr>
+                        <td><%= apparel.Apparel_ID %></td>
+                        <td><%= apparel.Sex %></td>
+                        <td><%= apparel.Article %></td>
+                        <td><%= apparel.Size %></td>
+                        <td><%= apparel.Status %></td>
+                        <td><%= link_to 'Edit', edit_apparel_path(apparel) %></td>
+                        <td><%= link_to 'Destroy', apparel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                      </tr>
+                    <% end %>
                 </tbody>
             </table>
         </div>
