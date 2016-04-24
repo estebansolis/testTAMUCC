@@ -37,5 +37,5 @@ ActiveRecord::Schema.define(version: 20160424185924) do
     t.string "Email"
     t.string "Phone_Number"
   end
+=======
 
-end
