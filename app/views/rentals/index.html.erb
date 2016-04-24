@@ -2,21 +2,19 @@
 
 <h1>Listing Rentals</h1>
 
-<table>
-  <thead>
+<table class="table table-hover">
+  <thead class="thead-inverse">
     <tr>
-      <th>Rental id</th>
-      <th>Uin</th>
-      <th>Apparel id</th>
-      <th>Checkout date</th>
-      <th>Expected return date</th>
-      <th>Return date</th>
-      <th colspan="3"></th>
+      <th>Rental ID</th>
+      <th>UIN</th>
+      <th>Apparel ID</th>
+      <th>Checkout Date</th>
+      <th>Expected Return Date</th>
+      <th>Return Date</th>
     </tr>
   </thead>
-
   <tbody>
-    <% @rentals.each do |rental| %>
+      <% @rentals.each do |rental| %>
       <tr>
         <td><%= rental.Rental_ID %></td>
         <td><%= rental.UIN %></td>
@@ -24,7 +22,6 @@
         <td><%= rental.Checkout_Date %></td>
         <td><%= rental.Expected_Return_Date %></td>
         <td><%= rental.Return_Date %></td>
-        <td><%= link_to 'Show', rental %></td>
         <td><%= link_to 'Edit', edit_rental_path(rental) %></td>
         <td><%= link_to 'Destroy', rental, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

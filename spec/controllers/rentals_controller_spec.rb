@@ -24,11 +24,25 @@ RSpec.describe RentalsController, type: :controller do
   # Rental. As you add validations to Rental, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {
+      Rental_ID: "1",
+      UIN: "123456789",
+      Apparel_ID: "4",
+      Checkout_Date: "04-12-2016",
+      Expected_Return_Date: "04-16-2016",
+      Return_Date: "04-14-2016"
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {
+      Rental_ID: nil,
+      UIN: nil,
+      Apparel_ID: nil,
+      Checkout_Date: nil,
+      Expected_Return_Date: nil,
+      Return_Date: nil
+    }
   }
 
   # This should return the minimal set of values that should be in the session
@@ -103,14 +117,21 @@ RSpec.describe RentalsController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        {
+          Rental_ID: "2",
+          UIN: "987654321",
+          Apparel_ID: "8",
+          Checkout_Date: "06-16-2016",
+          Expected_Return_Date: "06-20-2016",
+          Return_Date: "06-18-2016"
+        }
       }
 
       it "updates the requested rental" do
         rental = Rental.create! valid_attributes
         put :update, {:id => rental.to_param, :rental => new_attributes}, valid_session
         rental.reload
-        skip("Add assertions for updated state")
+        expect(assigns(:rental)).to eq(rental)
       end
 
       it "assigns the requested rental as @rental" do
