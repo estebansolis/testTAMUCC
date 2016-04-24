@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   root 'pages#home'
   
   get 'appointments' => "pages#appointments", as: :appointments
-  get 'available' => "pages#available", as: :available
+  get 'available' => "apparels#index", as: :available
+  get 'rentals' => "rentals#index"
+  get 'students' => "students#index"
   get 'checkedout'=> "pages#checkedout", as: :checkedout
   get 'checkin'=> "pages#checkin", as: :checkin
   get 'checkout'=> "pages#checkout", as: :checkout
