@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :rentals
+  resources :students
+  resources :apparels
   root 'pages#home'
   
   get 'appointments' => "pages#appointments", as: :appointments
