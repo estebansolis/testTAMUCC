@@ -48,6 +48,10 @@ RSpec.describe StudentsController, type: :controller do
   # StudentsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
+  before :each do
+    sign_in create( :user )
+  end
+
   describe "GET #index" do
     it "assigns all students as @students" do
       student = Student.create! valid_attributes
