@@ -25,7 +25,7 @@ class RentalsController < ApplicationController
   # POST /rentals
   # POST /rentals.json
   def create
-   @rental = Rental.new(params[:rent_id],params[:uin],params[:apparel_id],params[:check_out_date],params[:expected_return_date])
+   @rental = Rental.new(rental_params)
 
     respond_to do |format|
       if @rental.save
