@@ -1,5 +1,38 @@
-<h1>New Rental</h1>
 
-<%= render 'form' %>
+<div class="test">
+<h1>Check Out</h1>
+</div>
 
-<%= link_to 'Back', rentals_path %>
+<div class="form">
+	<tbody>
+		<%= form_for(@rental) do |f| %>
+		<p>
+			<%= f.label :Rental_ID %><br>
+      		<%= f.text_field :Rental_ID %>
+		</p>
+		<p>
+			 <%= f.label :UIN %><br>
+     		 <%= f.text_field :UIN %>
+		</p>
+		<p>
+			 <%= f.label :Apparel_ID %><br>
+     		 <%= f.text_field :Apparel_ID %>
+		</p>
+		<p>
+			<%= f.label :Checkout_Date %><br>
+      		<%= f.date_field :Checkout_Date %>
+		</p>
+		<p>
+			<%= f.label :Expected_Return_Date %><br>
+     	 	<%= f.date_field :Expected_Return_Date %>
+		</p>
+		<p>
+			<%= f.label :Return_Date %><br>
+      		<%= f.date_field :Return_Date %>
+		</p>
+		<p>
+			<%= f.submit class: "btn btn-info padded_button bid-btn" %>
+		</p>
+		<% end %>
+	</tbody>
+</div>

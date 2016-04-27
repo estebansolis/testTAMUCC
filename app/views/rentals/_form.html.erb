@@ -11,31 +11,33 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :Rental_ID %><br>
-    <%= f.text_field :Rental_ID %>
-  </div>
-  <div class="field">
-    <%= f.label :UIN %><br>
-    <%= f.text_field :UIN %>
-  </div>
-  <div class="field">
-    <%= f.label :Apparel_ID %><br>
-    <%= f.text_field :Apparel_ID %>
-  </div>
-  <div class="field">
-    <%= f.label :Checkout_Date %><br>
-    <%= f.date_field :Checkout_Date %>
-  </div>
-  <div class="field">
-    <%= f.label :Expected_Return_Date %><br>
-    <%= f.date_field :Expected_Return_Date %>
-  </div>
-  <div class="field">
-    <%= f.label :Return_Date %><br>
-    <%= f.date_field :Return_Date %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+<tbody>
+    <div class="field">
+      <%= f.label :Rental_ID %><br>
+      <%= f.text_field :Rental_ID %>
+    </div>
+    <div class="field">
+      <%= f.label :UIN %><br>
+      <%= f.text_field :UIN %>
+    </div>
+    <div class="field">
+      <%= f.label :Apparel_ID %><br>
+      <%= f.text_field :Apparel_ID %>
+    </div>
+    <div class="field">
+      <%= f.label :Checkout_Date %><br>
+      <%= f.date_field :Checkout_Date %>
+    </div>
+    <div class="field">
+      <%= f.label :Expected_Return_Date %><br>
+      <%= f.date_field :Expected_Return_Date %>
+    </div>
+    <div class="field">
+      <%= f.label :Return_Date %><br>
+      <%= f.date_field :Return_Date %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
 <% end %>
