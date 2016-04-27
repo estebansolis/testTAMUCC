@@ -1,4 +1,14 @@
+.navbar-default {
+  background-color: #500000;
+  background-image: none;
+  background-repeat: no-repeat;
 
+ }
+ 
+ .navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+ 
 .headers1{
   color: #500000;
 }
@@ -17,7 +27,11 @@
   float: right;
 }
 
-
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #500000;
+  border-color: #500000;
+}
 .btn-btn-primary1, .btn-btn-primary2 {
   background: #500000;
   background-image: -webkit-linear-gradient(top, #480000, #4B0000);
@@ -50,12 +64,15 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  color: green;
-  background-color: #f8f8f8;
+  background-color: #500000;
   /* Set the fixed height of the footer here */
   height: 40px;
   
   
+}
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .footer ul {
   float: right;
