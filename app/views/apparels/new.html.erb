@@ -1,5 +1,33 @@
-<h1>New Apparel</h1>
+<div class="test">
+<h1>Add Apparel To Database</h1>
+</div>
 
-<%= render 'form' %>
-
-<%= link_to 'Back', apparels_path %>
+<div class="form">
+	<tbody>
+		<%= form_for(@apparel) do |f| %>
+		<p>
+			<%= f.label :Apparel_ID %><br>
+      		<%= f.text_field :Apparel_ID %>
+		</p>
+		<p>
+			 <%= f.label :Sex %><br>
+     		 <%= f.text_field :Sex %>
+		</p>
+		<p>
+			 <%= f.label :Article %><br>
+     		 <%= f.text_field :Article %>
+		</p>
+		<p>
+			<%= f.label :Size %><br>
+      		<%= f.text_field :Size %>
+		</p>
+		<p>
+			<%= f.label :Status %><br>
+     	 	<%= f.text_field :Status %>
+		</p>
+		<p>
+			<%= f.submit class: "btn-btn-primary3" %>
+		</p>
+		<% end %>
+	</tbody>
+</div>
