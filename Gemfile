@@ -50,7 +50,7 @@ group :development, :test do
   gem 'launchy'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-  gem 'simplecov'
+  gem 'simplecov', :require => false
 end
 
 group :development do

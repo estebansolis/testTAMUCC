@@ -9,25 +9,26 @@ Background: students in database
   | 922004958  | Rafael      | Salas      | rafsalas@tamu.edu  | 2478247242   |
       
 Scenario: Add a new student
+  Given A user is logged in as "tester"
   Given I am on the home page
   When  I follow "Students"
   Then  I am on the students page
   When  I follow "New Student"
   And   I fill in the "student_UIN" with "123456789"
-  And   I fill in the "First Name" with "John"
-  And   I fill in the "Last Name" with "Smith"
-  And   I fill in the "Email" with "person@tamu.edu"
-  And   I fill in the "Phone Number" with "0987654321"
+  And   I fill in the "student_First_Name" with "John"
+  And   I fill in the "student_Last_Name" with "Smith"
+  And   I fill in the "student_Email" with "person@tamu.edu"
+  And   I fill in the "student_Phone_Number" with "0987654321"
   And   I press "Create Student"
-  Then  I expect to see  "Student was successfully created."
-  And   I press "Back"
+  Then  I should see "Student was successfully created."
+  And   I follow "Back"
   Then  I am on the students page
-  And   I see the UIN 123456789
+  And   I should see "123456789"
   
 Scenario: Delete a existing student
   Given I am on the home page
   When  I follow "Students"
   Then  I am on the students page
-  When  I follow "Destroy"
-  And   I click "OK"
-  Then  I expect to see "Student was successfully destroyed."
+  When  I follow "Delete"
+  And   I confirm popup
+  Then  I should see "Student was successfully destroyed."
