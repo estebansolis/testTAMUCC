@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+
     <div class="container">
         <div class="starter-template">
-            <h1>Home </h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-            <form>
-                <%= link_to "checkin", checkin_path, :class => 'btn btn-primary'%> 
-            </form>
-            <form>
-                <%= link_to "checkout", checkout_path, :class => 'btn btn-primary'%> 
-            </form>
+            <div class="buttonHolder">
+                    <%= link_to "Check Out", checkout_path, :class => 'btn-btn-primary2' %> 
+                    <%= link_to "Check In", checkin_path, :class => 'btn-btn-primary1' %> 
+            </div>
         </div>
-    </div><!-- /.container -->
-    
-</html>
+    </div>
+

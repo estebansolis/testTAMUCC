@@ -1,0 +1,38 @@
+
+
+.buttonHolder {
+ padding: 200px 450px;
+ overflow: hidden; 
+ text-align: center;
+}
+.btn-btn-primary1, .btn-btn-primary2 {
+  display: block;
+}
+.btn-btn-primary1 {
+  float: left;
+}
+.btn-btn-primary2 {
+  float: right;
+}
+
+
+/* footer */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  
+  
+}
+.footer ul {
+  float: right;
+  list-style: none;
+}
+
+.footer ul li {
+  float: left;
+  margin-left: 15px;
+}
