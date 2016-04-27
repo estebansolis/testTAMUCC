@@ -29,7 +29,7 @@ class ApparelsController < ApplicationController
 
     respond_to do |format|
       if @apparel.save
-        format.html { redirect_to @apparel, notice: 'Apparel was successfully created.' }
+        format.html { redirect_to available_path}
         format.json { render :show, status: :created, location: @apparel }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class ApparelsController < ApplicationController
   def update
     respond_to do |format|
       if @apparel.update(apparel_params)
-        format.html { redirect_to @apparel, notice: 'Apparel was successfully updated.' }
+        format.html { redirect_to available_path, notice: 'Apparel was successfully updated.' }
         format.json { render :show, status: :ok, location: @apparel }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class ApparelsController < ApplicationController
   def destroy
     @apparel.destroy
     respond_to do |format|
-      format.html { redirect_to apparels_url, notice: 'Apparel was successfully destroyed.' }
+      format.html { redirect_to available_path}
       format.json { head :no_content }
     end
   end

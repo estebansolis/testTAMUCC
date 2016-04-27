@@ -10,9 +10,9 @@ Rails.application.routes.draw do
   get 'available' => "apparels#index", as: :available
   get 'rentals' => "rentals#index"
   get 'students' => "students#index"
-  get 'checkedout'=> "pages#checkedout", as: :checkedout
+  get 'checkedout'=> "rentals#new", as: :checkedout
   get 'checkin'=> "pages#checkin", as: :checkin
-  get 'checkout'=> "rentals#new", as: :checkout
+  get 'checkout'=> "students#new", as: :checkout
   get 'late'=> "pages#late", as: :late
   get 'manage'=> "pages#manage", as: :manage
   get 'signin'=> "pages#signin", as: :signin

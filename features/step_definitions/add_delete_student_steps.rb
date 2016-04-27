@@ -1,27 +1,30 @@
-Given(/^the following students exist:$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/^the following students exist:$/) do |table|
+  table.hashes.each do |student|
+    Student.create(student)
+  end
 end
 
-Given(/^I am on the manage page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/^A user is logged in as "([^"]*)"$/) do |arg1|
+  @current_user = User.create!(
+    :password => 'generic',
+    :password_confirmation => 'generic',
+    :email => "#{arg1}@example.com"
+  )
+  visit "/signin" 
+  fill_in("Email", :with => "#{arg1}@example.com") 
+  fill_in("Password", :with => 'generic') 
+  click_button("Log in")
+  if page.respond_to? :should
+    page.should have_content('Signed in successfully')
+  else
+    assert page.has_content?('Signed in successfully')
+  end
 end
 
-When(/^I fill out the "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
-  pending # Write code here that turns the phrase above into concrete actions
+When(/^I fill in the "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
+  fill_in(arg1, :with => arg2)
 end
 
-When(/^I press "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Then(/^I expect to see  "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-When(/^I select \#s$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Then(/^I expect to see "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+When(/^I confirm popup$/) do
+  page.driver.browser.switch_to.alert.accept 
 end

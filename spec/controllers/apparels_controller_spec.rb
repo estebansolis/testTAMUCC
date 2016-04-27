@@ -23,6 +23,24 @@ RSpec.describe ApparelsController, type: :controller do
   # This should return the minimal set of attributes required to create a valid
   # Apparel. As you add validations to Apparel, be sure to
   # adjust the attributes here as well.
+  
+  #describe "anonymous user" do
+  #  before :each do
+  #    login_with nil
+  #  end
+  #  it "should be redirected to signin" do
+  #    get :index
+  #    expect(response).to redirect_to(new_user_session_path)
+  #  end
+  #  it "should let a user see all the posts" do
+  #    login_with create(:user)
+  #    get :index
+  #    expect(response).to render_template(:index)
+  # end
+  #end
+  
+  
+  
   let(:valid_attributes) {
     {
       Apparel_ID: "1",
@@ -47,7 +65,11 @@ RSpec.describe ApparelsController, type: :controller do
   # in order to pass any filters (e.g. authentication) defined in
   # ApparelsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
-
+  
+  before :each do
+    sign_in create( :user )
+  end
+  
   describe "GET #index" do
     it "assigns all apparels as @apparels" do
       apparel = Apparel.create! valid_attributes

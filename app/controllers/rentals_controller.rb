@@ -25,11 +25,11 @@ class RentalsController < ApplicationController
   # POST /rentals
   # POST /rentals.json
   def create
-   @rental = Rental.new(params[:rent_id],params[:uin],params[:apparel_id],params[:check_out_date],params[:expected_return_date])
+   @rental = Rental.new(rental_params)
 
     respond_to do |format|
       if @rental.save
-        format.html { redirect_to @rental, notice: 'Rental was successfully created.' }
+        format.html { redirect_to rentals_path}
         format.json { render :show, status: :created, location: @rental }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class RentalsController < ApplicationController
   def update
     respond_to do |format|
       if @rental.update(rental_params)
-        format.html { redirect_to @rental, notice: 'Rental was successfully updated.' }
+        format.html { redirect_to rentals_path}
         format.json { render :show, status: :ok, location: @rental }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class RentalsController < ApplicationController
   def destroy
     @rental.destroy
     respond_to do |format|
-      format.html { redirect_to rentals_url, notice: 'Rental was successfully destroyed.' }
+      format.html { redirect_to rentals_url}
       format.json { head :no_content }
     end
   end

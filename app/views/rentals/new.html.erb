@@ -1,46 +1,38 @@
-<!--  jQuery -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-<!-- Isolated Version of Bootstrap, not needed if your site already used Bootstrap -->
-<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+<div class="test">
+<h1>Check Out</h1>
+</div>
 
-<!-- Bootstrap Date-Picker Plugin -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-
-<!DOCTYPE html>
-<html lang="en">
-   <div class="container">
-       <div class="starter-template">
-           <h1>Check Out </h1>
-           <form>
-             <fieldset class="form-group">
-             <label for="rent_id">Rental ID</label>
-             <input type="email" class="form-control" id="rent_id" placeholder="Enter Rental ID">
-             <label for="uin">UIN</label>
-             <input type="email" class="form-control" id="uin" placeholder="Enter UIN">
-             <label for="apparel_id">Apparel ID</label>
-             <input type="email" class="form-control" id="apparel_id" placeholder="Enter Apparel ID">
-             <label class="control-label" for="check_out_date">Check Out Date</label>
-             <input class="form-control" id="check_out_date" name="date" placeholder="MM/DD/YYYY" type="text"/>
-             <label class="control-label" for="expected_return_date">Expected Return Date</label>
-             <input class="form-control" id="expected_return_date" name="date" placeholder="MM/DD/YYYY" type="text"/>
-
-           <br>
-           <%= link_to "Submit", "/rentals(.:format)",:rent_id =>"rent_id",:uin => "uin",:apparel_id =>"apparel_id",:check_out_date => "check_out_date",:expected_return_date => "expected_return_date", :class => 'btn btn-primary'%>
-</form>
-       </div>
-   </div><!-- /.container -->
-</html>
-
-<script>
-    var date_input=$('input[name="date"]'); //our date input has the name "date"
-    var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-    var options={
-        format: 'mm/dd/yyyy',
-        container: container,
-        todayHighlight: true,
-        autoclose: true,
-    };
-    date_input.datepicker(options); //initiali110/26/2015 8:20:59 PM ze plugin
-</script>
+<div class="form">
+	<tbody>
+		<%= form_for(@rental) do |f| %>
+		<p>
+			<%= f.label :Rental_ID %><br>
+      		<%= f.text_field :Rental_ID %>
+		</p>
+		<p>
+			 <%= f.label :UIN %><br>
+     		 <%= f.text_field :UIN %>
+		</p>
+		<p>
+			 <%= f.label :Apparel_ID %><br>
+     		 <%= f.text_field :Apparel_ID %>
+		</p>
+		<p>
+			<%= f.label :Checkout_Date %><br>
+      		<%= f.date_field :Checkout_Date %>
+		</p>
+		<p>
+			<%= f.label :Expected_Return_Date %><br>
+     	 	<%= f.date_field :Expected_Return_Date %>
+		</p>
+		<p>
+			<%= f.label :Return_Date %><br>
+      		<%= f.date_field :Return_Date %>
+		</p>
+		<p>
+			<%= f.submit class: "btn btn-info padded_button bid-btn" %>
+		</p>
+		<% end %>
+	</tbody>
+</div>

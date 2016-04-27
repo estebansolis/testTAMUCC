@@ -50,6 +50,10 @@ RSpec.describe RentalsController, type: :controller do
   # RentalsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
+  before :each do
+    sign_in create( :user )
+  end
+
   describe "GET #index" do
     it "assigns all rentals as @rentals" do
       rental = Rental.create! valid_attributes
