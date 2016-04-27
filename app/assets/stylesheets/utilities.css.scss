@@ -1,7 +1,9 @@
 
-
+.headers1{
+  color: #500000;
+}
 .buttonHolder {
- padding: 200px 450px;
+ padding: 200px 400px;
  overflow: hidden; 
  text-align: center;
 }
@@ -16,14 +18,42 @@
 }
 
 
+.btn-btn-primary1, .btn-btn-primary2 {
+  background: #500000;
+  background-image: -webkit-linear-gradient(top, #480000, #4B0000);
+  background-image: -moz-linear-gradient(top, #480000, #4B0000);
+  background-image: -ms-linear-gradient(top, #480000, #4B0000);
+  background-image: -o-linear-gradient(top, #480000, #4B0000);
+  background-image: linear-gradient(to bottom, #480000, #4B0000);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #f8f8f8;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn-btn-primary1:hover, .btn-btn-primary2:hover {
+  background: #500000;
+  background-image: -webkit-linear-gradient(top, #480000, #500000);
+  background-image: -moz-linear-gradient(top, #480000, #500000);
+  background-image: -ms-linear-gradient(top, #480000, #500000);
+  background-image: -o-linear-gradient(top, #480000, #500000);
+  background-image: linear-gradient(to bottom, #480000, #500000);
+  text-decoration: none;
+}
+
 /* footer */
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  color: green;
+  background-color: #f8f8f8;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 40px;
   
   
 }
@@ -36,3 +66,5 @@
   float: left;
   margin-left: 15px;
 }
+
+ 
